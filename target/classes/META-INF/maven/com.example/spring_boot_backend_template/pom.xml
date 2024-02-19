@@ -12,10 +12,10 @@
 	<groupId>com.example</groupId>
 	<artifactId>spring_boot_backend_template</artifactId>
 	<version>0.0.1</version>
-	<name>spring_boot_backend_template</name>
-	<description>Template Project for Spring Boot based Backend </description>
+	<name>Student-Course-Mgmt</name>
+	<description>Student course management system</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

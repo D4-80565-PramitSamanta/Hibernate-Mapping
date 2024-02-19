@@ -12,8 +12,10 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(name = "users")
-public class Person {
+public class Person extends BaseEntity {
 	String name;
 	String address;
-	
+	@OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "aadhar_card_id", referencedColumnName = "id")
+	AadharCard card;
 }

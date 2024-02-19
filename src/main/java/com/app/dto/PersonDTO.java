@@ -13,7 +13,6 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PersonDTO {
-	String name;
-	String address;
-	AadharCard card;
+	String firstname;
+	String lastname;
 }

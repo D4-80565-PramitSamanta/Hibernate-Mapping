@@ -13,9 +13,9 @@ import lombok.Setter;
 @Entity
 @Table(name = "users")
 public class Person extends BaseEntity {
-	String name;
-	String address;
-	@OneToOne(cascade = CascadeType.ALL)
+	String firstname;
+	String lastname;
+	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "aadhar_card_id", referencedColumnName = "id")
 	AadharCard card;
 }
